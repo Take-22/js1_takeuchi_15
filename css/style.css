@@ -1,0 +1,315 @@
+@charset "utf-8";
+body{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',"游ゴシック",'メイリオ', sans-serif;
+    font-weight: bold;
+    background-color: #fdc500;
+    width: 100%;
+}
+header{
+    text-align: center;
+}
+.header_sub{
+    font-size: 18px;
+    text-align: right;
+    color: #fdc500;
+    background-color: black;
+    padding: 15px 15px 15px 0;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.image{
+    z-index: 2;
+}
+.a_image{
+    width: 426px;
+    align-items: center;
+    margin: 0 auto;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    color: #fdc500;
+    background-color: black;
+    padding: 15px 0;
+}
+/* main menu */
+.background_image{
+    position: relative;
+}
+.background_adjust{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.background_battle{
+    display: flex;
+}
+.battle_btn{
+    display: block;
+    width: 320px;
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(
+      to right,
+      #fdc500 0%,
+      #fdc500 50%,
+      #000000 50%,
+      #000000 100%
+    );
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.5s;
+    font-size: 36px;
+    margin: 0 150px;
+    cursor: pointer; 
+}
+.battle_btn:hover {
+    background-position: 0 0;
+}
+.battle_btn_letter{
+    padding: 20px 0;
+    color:#fdc500;
+}
+.battle_btn_letter:hover{
+    padding: 20px 0;
+    color:#000;
+}
+/* game play */
+.overall{
+    position: relative;
+}
+    /* Player & CPU */
+    .player{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 11.5px;
+    }
+    .cpu{
+        display: flex;
+        justify-content: center;
+        margin-top: 11.5px;
+    }
+    .player_cards{
+        width: 150px;
+        height: 312px;
+        margin: 20px 20px;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .player_cards::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+    }
+    .player_cards:hover::after {
+        transform: scale(1, 1);
+    }
+    .cpu_cards{
+        width: 100px;
+        height: 208px;
+        margin: 20px 20px;
+    }
+    #eiji,#arthur,#shorter,#golzine,#ash{
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    #eiji:hover,#arthur:hover,#shorter:hover,#golzine:hover,#ash:hover{
+        transform: translateY(-0.2875em);
+    }  
+    /* dealing space */
+    .dealing{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .dealing_space{
+        width: 225px;
+        height: 450px;
+        border: 3px solid #000;
+        border-radius: 25px;
+        margin: 0 48px;
+    }
+    .dealing_PLY{
+        position: absolute;
+        left: 0px;
+        bottom: 180px;
+    }
+    .dealing_PLY_sub{
+        position: absolute;
+        left: 90px;
+        bottom: 600px;
+        width: 150px;
+        height: auto;
+
+    }
+    .player_letter{
+        position: absolute;
+        left: 124px;
+        bottom: 695px;
+        font-size: 28px;
+        color: #fdc500;
+        z-index: 1;
+    }
+    .dealing_CPU{
+        position: absolute;
+        right: 0px;
+        bottom: 180px;
+    }
+    .dealing_CPU_sub{
+        position: absolute;
+        right: 90px;
+        bottom: 600px;
+        width: 150px;
+        height: auto;
+    }
+    #player_hands,#cpu_hands{
+        padding-top: 15px;
+    }
+    .PLYposition{
+        position: absolute;
+        left: 295px;
+        bottom: 320px;
+    }
+    .PLYpoint,.CPUpoint{
+        margin-bottom: 23.5px;
+    }
+    .CPUposition{
+        position: absolute;
+        right: 295px;
+        bottom: 320px;
+    }
+    .PLYposition_sub{
+        position: absolute;
+        left: 285px;
+        bottom: 325px;
+    }
+    #PLYpistol,#CPUpistol{
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .CPUposition_sub{
+        position: absolute;
+        right: 285px;
+        bottom: 325px;
+    }
+
+    /* 元に戻るボタン  */
+    .button01{
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+    }
+    .button02{
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+    .backtomenu{
+        font-size: 16px;
+        padding: 12px;
+        background: #fdc500;
+        color: #000;
+        transition: background 0.5s;
+        transition: 0.5s;
+        border-radius: 15px;
+    }
+    .backtomenu:hover{
+        color: #fdc500;
+        background: #000;
+    }
+    #restart{
+        font-size: 16px;
+        padding: 12px 24px;
+        background: #fdc500;
+        color: #000;
+        transition: background 0.5s;
+        transition: 0.5s;
+        border-radius: 15px;
+    }
+    #restart:hover{
+        color: #fdc500;
+        background: #000;
+    }
+
+    /* judgement area */
+    .result{
+        width: 800px;
+        height: 144px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #judgement{
+        width: 550px;
+        height: 60px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        color: #fdc500;
+        font-size: 24px;
+        border-radius: 25px;
+    }
+    #judgementFinal{
+        font-size: 120px;
+    }
+
+/* game rules */
+    .wrapping{
+        margin: 8px 0;
+    }
+    .items{
+        display: flex;
+        justify-content: center;
+    }
+    .explanation{
+        font-size: 24px;
+        width: 1000px;
+        text-align: left;  
+    }
+    .explanation00{
+        font-size: 24px;
+        width: 1000px;
+        text-align: left;  
+    }
+    .take00{
+        margin: 12px;
+        background-color: black;
+        color: #fdc500;
+        padding: 8px 0 8px 8px;
+    }
+    .take{
+        margin: 10px;
+        padding-left: 8px;
+    }
+    .button01_a{
+        font-size: 16px;
+        padding: 12px;
+        width: 152px;
+        margin-left: 10px;
+        margin-bottom: 3px;
+    }

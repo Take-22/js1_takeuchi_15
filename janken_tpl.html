@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Bananafish × Take</title>
+</head>
+<body>
+
+<header>
+  <header>
+      <a href="./menu.html" class="a_image"><img src="./img/header.png" alt="bananafish"></a>
+      <p class="header_sub">2021.05.10 | BANANA FISH × TAKE</p>
+  </header>
+</header>
+
+<main>
+  <div class="overall">
+    <!-- CPUのカード -->
+    <ul class="cpu">
+      <li class=cpu_cards><img src="./img/eiji.png" id="_eiji" alt="Eijiの画像"></li>
+      <li class=cpu_cards><img src="./img/arthur.png" id="_arthur" alt="Authurの画像"></li>
+      <li class=cpu_cards><img src="./img/shorter.png" id="_shorter" alt="Shorterの画像"></li>
+      <li class=cpu_cards><img src="./img/golzine.png" id="_golzine" alt="Golzineの画像"></li>
+      <li class=cpu_cards><img src="./img/ash.png" id="_ash" alt="Ashの画像"></li>
+    </ul>
+    <!-- //中央// -->
+    <ul class=dealing>
+        <!-- Playerの出し場 -->
+      <div class="dealing_PLY">
+        <li class="dealing_space"><div id="player_hands"></div></li>
+      </div>
+      <p class="player_letter">you</p>
+      <div class="dealing_PLY_sub">
+        <img src="./img/player01.png" class="image" alt="">
+      </div>
+      <ul class="PLYposition">
+        <li class="PLYpoint"><div>____</div></li>
+        <li class="PLYpoint"><div>____</div></li>
+        <li class="PLYpoint"><div>____</div></li>
+        <li class="PLYpoint"><div>____</div></li>
+        <li class="PLYpoint"><div>____</div></li>
+        <li class="PLYpoint"><div>____</div></li>
+      </ul>
+      <!-- 中央の最終結果 -->
+      <div class="result">
+          <li id="judgement">CHOOSE YOUR HAND FROM BELOW...</li>
+          <li id="judgementFinal"></li>
+      </div>
+      <!-- CPUの出し場 -->
+      <div class="dealing_CPU">
+        <li class="dealing_space"><div id="cpu_hands"></div></li>
+      </div>
+      <div class="dealing_CPU_sub">
+        <img src="./img/player02.png" alt="">
+      </div>
+      <ul class="CPUposition">
+        <li class="CPUpoint"><div>____</div></li>
+        <li class="CPUpoint"><div>____</div></li>
+        <li class="CPUpoint"><div>____</div></li>
+        <li class="CPUpoint"><div>____</div></li>
+        <li class="CPUpoint"><div>____</div></li>
+        <li class="CPUpoint"><div>____</div></li>
+      </ul>      
+      <ul class="CPUposition_sub">
+        <li class="CPUpistol_sub"><div id="CPUpistol"></div></li>
+      </ul>
+    </ul>
+    <!-- ///// -->
+    <!-- Playerのカード -->
+    <ul class="player">
+      <li class=player_cards><img src="./img/eiji.png" id="eiji" alt="Eijiの画像"></li>
+      <li class=player_cards><img src="./img/arthur.png" id="arthur" alt="Authurの画像"></li>
+      <li class=player_cards><img src="./img/shorter.png" id="shorter" alt="Shorterの画像"></li>
+      <li class=player_cards><img src="./img/golzine.png" id="golzine" alt="Golzineの画像"></li>
+      <li class=player_cards><img src="./img/ash.png" id="ash" alt="Ashの画像"></li>
+    </ul>
+    <ul class="PLYposition_sub">
+      <li class="PLYpistol_sub"><div id="PLYpistol"></div></li>
+    </ul>
+    <!-- その他のボタン-->
+    <div class="button01">
+      <a href="./menu.html" class="backtomenu">BACK TO MENU</a>
+    </div>
+    <div class="button02">
+      <a href="./janken_tpl.html" id="restart"></a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <small class="copyrights">COPYRIGHTS 2021 [BANANA FISH × TAKE] ALL RIGHTS RESERVED.</small>
+</footer>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
